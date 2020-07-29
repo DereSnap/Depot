@@ -38,12 +38,14 @@ class ProductsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a Product" do
-    visit products_url
-    page.accept_confirm do
-      click_on "Destroy", match: :first
-    end
-
-    assert_text "Product was successfully destroyed"
+  test "product is not valid without a uniqw title" do
+    product=product.new (title:  products(:ruby).title,
+                         description:"yyy",
+                         price:       1,
+                         image_url:  "fred.gif")
+    assert product.invalid?
+    assert_equal ["has alrady been taken"], product.errors[:titlt]
   end
+  end
+    products(:ruby).title
 end
