@@ -9,6 +9,16 @@
       "js.map": [
         "/packs-test/js/application-31c0a7fd2aa09b742314.js.map"
       ]
+    },
+    "hello_coffee": {
+      "js": [
+        "/packs-test/js/hello_coffee-65b2d1832df1fc69b006.js"
+      ],
+      "js.map": [
+        "/packs-test/js/hello_coffee-65b2d1832df1fc69b006.js.map"
+      ]
     }
-  }
+  },
+  "hello_coffee.js": "/packs-test/js/hello_coffee-65b2d1832df1fc69b006.js",
+  "hello_coffee.js.map": "/packs-test/js/hello_coffee-65b2d1832df1fc69b006.js.map"
 }
